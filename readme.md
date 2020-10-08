@@ -11,7 +11,7 @@ Ejecutar preferiblemente desde consola o en Workbench.
 * `CREATE TABLE users(
     id INT(11) NOT NULL AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
+    password VARCHAR(510) NOT NULL,
     PRIMARY KEY (id)
 );`
 * `CREATE TABLE articles (
