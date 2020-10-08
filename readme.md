@@ -47,7 +47,6 @@ FOREIGN KEY (article_id) REFERENCES articles(id);`
  
 # Solución de los problemas planteados
 
-    ![Captura del esquema relacional](./public/DB_SCHEMA.jpeg)
 
   - En base al problema, se planteo un esquema relacional N:N, donde la tabla pay_order funge como la tabla con mayor jerarquía en el esquema, tiene los campos: `id`, `name`, `description` y `date`
   - Después tenemos la tabla articles, en ella solo tenemos los atributos `id`, `name` & `description`.
