@@ -47,6 +47,8 @@ FOREIGN KEY (article_id) REFERENCES articles(id);`
  
 # Solución de los problemas planteados
 
+    ![Captura del esquema relacional](./public/DB_SCHEMA.jpeg)
+
   - En base al problema, se planteo un esquema relacional N:N, donde la tabla pay_order funge como la tabla con mayor jerarquía en el esquema, tiene los campos: `id`, `name`, `description` y `date`
   - Después tenemos la tabla articles, en ella solo tenemos los atributos `id`, `name` & `description`.
   - Para finalizar contamos con una tabla pivote pay_article_relation, al ser un esquema N:N necesitamos esta tabla, la cual nos permite relacionar ambas tablas sin necesidad de un atributo extra y con consultas mas limpias en esta tabla unicamente necesitamos los `id` de las otras respectivas tablas, bajo los campos de `order_id` para el id de la orden y `article_id` para el id de articulo.
